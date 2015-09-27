@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "Quick Start"
+date:   2014-04-06 15:40:56
+categories: home
+---
+
+###**Installation**
+It is recommended that you install Stripe.net via NuGet. 
+
+###**Build**
+If you wish to build it yourself via build.cmd, you will need
+ruby installed along with the gems albacore and zip. You could also just build the assembly in Visual Studio by opening the solution and compiling.
+
+Add a reference to Stripe.net.dll.
+
+###**API Key**
+Next you will need to provide Stripe.net with your api key. There are 4 ways to do this:
+
+a) Add an AppSetting with your api key to your config (this is the easiest way and will work throughout the app on every request)
+
+{% highlight xml %}
+<appSettings>
+...
+	<add key="StripeApiKey" value="[your api key here]" />
+...
+</appSettings>
+{% endhighlight %}
+
+b) In your application initialization, call this method (this is a programmatic way, but you only have to do it once during startup)
+
+{% highlight csharp %}
+StripeConfiguration.SetApiKey("[your api key here]");
+{% endhighlight %}
+
+c) In any of the service constructors, you can optionally pass the api key (will be assigned that apikey for the life of the service instance).
+{% highlight csharp %}
+var planService = new StripePlanService("[your api key here]");
+{% endhighlight %}
+
+d) In any of the service calls, you can pass a [StripeRequestOptions](#striperequestoptions) object with the apikey specified.
+
+{% highlight csharp %}
+var planService = new StripePlanService();
+planService.Get(*planId*, new StripeRequestOptions() { ApiKey = "[your api key here]" });
+{% endhighlight %}
+
+API Versions
+------------------
+
+Stripe.net forces a version of the Stripe API for which it was designed. You can find out the latest version supported by viewing StripeConfiguration.cs under the Infrastructure folder.

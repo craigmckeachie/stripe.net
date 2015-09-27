@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Community"
+date:   2014-04-06 15:40:56
+categories: community
+---
+
+##**Donations**
+
+If you would like to donate to help support stripe.net, my paypal address is jaymedavis@gmail.com. It's certainly not required, but I would appreciate it. :)
+
+
+##**Contributions** 
+**If you would like to submit a pull request.**
+
+First, thank you! It is a lot of work to learn someone else's codebase, so I appreciate it. Here are a few things that would help me out:
+* Do not submit pull requests for more than one fix. Keep them small and focused.
+* Please code review yourself. There are a lot of pull requests with typos and mistakes. Don't worry, we all do it. But a code review of yourself will help. :)
+* Please review the diff in GitHub that I will see before I merge your pull requests. If it's hard for you to tell what the differences are, it's going to be hard for me too.
+
