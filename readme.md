@@ -42,7 +42,11 @@ d) In any of the service calls, you can pass a [StripeRequestOptions](#stripereq
 Stripe API Version
 ------------------
 
-Stripe.net forces a version of the Stripe API for which it was designed. You can find out the latest version supported by viewing StripeConfiguration.cs under the Infrastructure folder.
+Stripe.net forces a version of the Stripe API for which it was designed. You can find out the latest version supported by viewing StripeConfiguration.cs under the Infrastructure folder.  See the video below for more information about Stripe.NET versions and how they correspond with Stripe API versions.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c6dJRc9V_Ls&&rel=0" frameborder="0" allowfullscreen></iframe>
+
+
 
 Examples
 ========
