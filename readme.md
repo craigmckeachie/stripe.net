@@ -44,9 +44,10 @@ Stripe API Version
 
 Stripe.net forces a version of the Stripe API for which it was designed. You can find out the latest version supported by viewing StripeConfiguration.cs under the Infrastructure folder.  See the video below for more information about Stripe.NET versions and how they correspond with Stripe API versions.
 
-
-[![Stripe API and Stripe.NET Versions](http://i.imgur.com/eArdtRE.png?1)](https://youtu.be/c6dJRc9V_Ls?t=51s&related=0 "Stripe API and Stripe.NET Versions"){:target="_blank"}
-
+<a href="https://youtu.be/c6dJRc9V_Ls?t=51s&related=0" target="_blank">
+Stripe API and Stripe.NET Versions
+<img src="http://i.imgur.com/eArdtRE.png?1" alt="Stripe API and Stripe.NET Versions"></img>
+</a>
 
 
 Examples
